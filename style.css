@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #e2e4e8, #1e1f20); /* Light blue gradient inspired by the given colors */
+    min-height: 100vh; /* Ensure the gradient covers the full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 40px; 
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #0b0909;
+    font-family: ui-monospace;
+    margin-left: -75px;
+}
+
+
+
+
+.video-container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    top: -5px;
+    left: -20px;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#subtitleDisplay {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    max-width: 90%;
+    z-index: 2;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff; 
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.tooltip:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.upload-btn {
+    background: linear-gradient(to right, #1c1c1d, #15181b); /* Gradient with shades of blue */
+    border: none; /* No default border */
+    color: white; /* White text color */
+    padding: 12px 24px; /* Padding inside the button */
+    font-size: 1em; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    text-align: center; /* Center-align the text */
+    display: block; /* Display as block-level element */
+    margin-left: 650px; /* Center horizontally */
+    margin-right:auto; /* Center horizontally */
+}
+
+/* Hover effect for button */
+.upload-btn:hover {
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
+/* Active effect for button */
+.upload-btn:active {
+    transform: translateY(1px); /* Button pressed effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow on click */
+}
+
+   
+   
+  
+  

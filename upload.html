@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video and Subtitle</title>
+    <link rel="stylesheet" href="upload-styles.css">
+</head>
+<body>
+    <div class="heading-container">
+        <h1>SEMANTIC CONTEXTUAL ANALYSIS OF SUBTITLE DATA</h1>
+        <h3>Extracting word meanings from subtitle data on hover</h3>
+    </div>
+    <div class="upload-container">
+        <h1></h1>
+        <form id="uploadForm">
+            <label for="videoFile">Upload Video (MP4):</label>
+            <input type="file" id="videoFile" accept=".mp4" required>
+            <label for="vttFile">Upload Subtitle (VTT):</label>
+            <input type="file" id="vttFile" accept=".vtt" required>
+            <button type="submit">Generate Smart Subtitles</button>
+        </form>
+    </div>
+    <script src="upload-script.js"></script>
+</body>
+</html>

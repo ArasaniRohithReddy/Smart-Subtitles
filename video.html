@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Subtitles with Tooltips</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader" id="loader" style="display: none;"> <!-- Loader element initially hidden -->
+        <span class="loader-text">loading</span>
+        <span class="load"></span>
+    </div>
+    <div class="container" id="videoContainer"> <!-- Container for video and subtitles -->
+        <h1>SMART SUBTITLES</h1>
+        <div class="video-container">
+            <video id="myVideo" controls>
+                <source id="videoSource" type="video/mp4">
+                <track id="subtitleTrack" label="English" kind="subtitles" srclang="en" default>
+                Your browser does not support the video tag.
+            </video>
+            <div id="subtitleDisplay"></div> <!-- Dynamic subtitle display above the video bar -->
+        </div>
+        <button id="uploadNewButton" class="upload-btn">Upload New Video</button> <!-- New button for uploading -->
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Redirect to upload page when "Upload New Video" button is clicked
+        document.getElementById('uploadNewButton').addEventListener('click', () => {
+            window.location.href = 'upload.html'; // Redirect to the upload page
+        });
+    </script>
+</body>
+</html>
+
+

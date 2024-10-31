@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles with a gradient background */
+body {
+    font-family: 'Arial', sans-serif; /* Set a clean font */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to bottom right, #e2e4e8, #1e1f20); /* Gradient background */
+    position: relative;
+    top: 10px;
+}
+
+/* Heading container styles */
+.heading-container {
+    background-color: rgba(205, 223, 229, 0.011);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    top: -70px;
+}
+
+/* Heading style with updated color */
+h1 {
+    font-size: 2em; 
+    font-family: ui-monospace;/* Adjust font size as needed */
+    color: #000000;
+    margin-bottom: 15px; /* Adds space below the h1 */
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: ui-monospace; /* Adjust font size as needed */
+    color: #000000;
+}
+
+
+/* Container for the upload form */
+.upload-container {
+    text-align: center; /* Center text */
+    max-width: 500px; /* Maximum width of the box */
+    padding: 30px; /* Padding inside the box */
+    border-radius: 15px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Half-white with transparency */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+/* Label styles */
+label {
+    display: block; /* Block display for each label */
+    margin: 15px 0 5px; /* Margin for spacing */
+    font-weight: 600; /* Slightly bold text */
+    color: rgb(0, 0, 0); /* Purple text color for labels */
+    font-size: 1.1em; /* Slightly larger font size */
+}
+
+/* Input file styles */
+input[type="file"] {
+    display: block; /* Block display to take full width */
+    margin-bottom: 15px; /* Space below input */
+    padding: 10px; /* Padding inside the input */
+    border: 2px solid rgb(0, 0, 0); /* Purple border color */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width to fit the container */
+    cursor: pointer; /* Pointer cursor */
+    background-color: #f9f9f9; /* Light background color for visibility */
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+/* Input file hover effect */
+input[type="file"]:hover {
+    border-color: rgb(0, 0, 0); /* Darker purple on hover */
+    background-color: #e8e8e8; /* Slightly darker background on hover */
+}
+
+/* Input file focus effect */
+input[type="file"]:focus {
+    outline: none;
+    border-color: rgb(0, 0, 0);
+    background-color: #e0e0e0;
+}
+
+/* Button styles */
+button {
+    padding: 12px 25px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    background-color: rgb(40, 39, 52); /* Purple background */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    font-size: 1em; /* Font size */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2em; /* Darker shade on hover */
+}
+
+.upload-btn {
+    background: linear-gradient(to right, #4e9af1, #8ac5f2); /* Gradient blue shades */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px; /* Space above the button */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center-align the text */
+}
+
+.upload-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+/* Active effect */
+.upload-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
