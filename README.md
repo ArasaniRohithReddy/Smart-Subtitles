@@ -1,5 +1,5 @@
 <h1>Project</h1>
-<h2 align="center">Smart-Subtitles <br/> <a target="_blank" href="https://smart-subtitles.vercel.app/">devanshsahni</a></h2>
+<h2 align="center">Smart-Subtitles <br/> <a target="_blank" href="https://smart-subtitles.vercel.app/">Smart-Subtitles</a></h2>
 
 <p>A tool to generate dynamic, contextually aware subtitles that enhance the video-watching experience by analyzing audio and visual cues. The project aims to improve accessibility and user engagement by providing real-time, accurate subtitle adjustments.</p>
 
