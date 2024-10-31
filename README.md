@@ -69,3 +69,6 @@
 
 <h2 id="credit">Credit</h2>
 <p>Please give proper credit if you use or modify this repository. A simple mention of the repository link and the author is appreciated.</p>
+
+<h2 id="note">Note</h2>
+<p>For a better experience using the site, please use it in incognito mode.</p>
